@@ -1,0 +1,180 @@
+:root{
+    --maincolor : red ;
+}
+
+.class5{
+    display: flex;
+    width: 500px;
+    
+
+    
+    
+}
+
+.one {
+    padding: 10px;
+    border-bottom: 2px solid var(--maincolor);
+    color:var(--maincolor) !important;
+    color: black;
+    position: relative;
+    margin: 50px;
+    flex-direction: row;
+    direction: rtl;
+    flex-wrap: wrap
+    
+
+}
+
+.one::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: 1px;
+    top: 0;
+    background-color: gold;
+}
+
+.one::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 50%;
+    left: -5px;
+
+    background-color: gold;
+
+}
+
+.tow {
+    padding: 10px;
+    border-bottom: 2px solid green;
+    color: green;
+    cursor: move;
+
+}
+
+.three {
+    padding: 10px;
+    border-bottom: 2px solid blue;
+    color: blue;
+    cursor: grab;
+
+}
+
+.four {
+    padding: 10px;
+    border-bottom: 2px solid black;
+    color: black;
+    cursor: pointer;
+
+}
+
+.one,
+.tow,
+.three,
+.four {
+    margin: 10px 0;
+    background-color: #eee;
+    width: 300px;
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    opacity: 0.7;
+
+}
+
+li {
+    list-style-type: none;
+    background-color:var(--maincolor);
+    list-style-position: inside;
+
+}
+
+table {
+    width: 100%;
+    border: 1px solid #eee;
+    border-spacing: 0px;
+}
+
+table td {
+    background-color: #eee;
+    padding: 15px;
+    border: 1px var(--maincolor) solid;
+}
+
+table thead td {
+    background-color: var(--maincolor);
+    color: #eee;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: violet;
+}
+
+/* :empty{
+    border: rgb(50, 30, 206) 1px solid;
+} */
+input:focus {
+    border-color: red;
+    outline: none;
+}
+
+.bb:first-letter {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+}
+
+.bb:first-line {
+    font-weight: bold;
+}
+
+::selection {
+    background-color: yellow;
+    color: green;
+}
+
+.new {
+    height: 100px;
+    width: 100px;
+    border: red solid 1px;
+    background-color:#eee;
+    margin: 20px auto;
+    /* border-radius: 20%; */
+    /* border-top-left-radius:20px  20px ; */
+    box-shadow: -9px 15px 13px 1px #852424, 8px -3px 7px 4px gold;
+
+
+} 
+.new:hover{
+    margin-left: 20pxs;
+}
+.new22{
+width: 200px;
+height: 100px;
+background-color: #eee;
+transition-duration:0.5s ;
+transition-delay: 0.2s;
+transition-property: all;
+
+}
+.new22:hover{
+
+    width: 250px;
+
+}
